@@ -1,0 +1,329 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    padding-top: 70px;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+/* Portfolio logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation list */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Navigation list items */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Navigation links */
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Common section styles */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Section headings */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* About section container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Profile image */
+.about-img {
+    width: 240px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Profile image hover effect */
+.about-img:hover {
+    transform: scale(1.1);
+}
+
+/* About text */
+.about-text {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+/* Horizontal Skill Bars */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 600px;
+}
+
+/* Individual skill */
+.skill {
+    width: 100%;
+}
+
+/* Skill name */
+.skill span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Skill progress bar background */
+.skill-bar {
+    background: #ddd;
+    border-radius: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+/* Skill progress bar fill */
+.skill-fill {
+    background: #004170;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+/* Photography section */
+.photo-video-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Photography images */
+.photo-overlay img {
+    width: 220px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+/* Photography image hover effect */
+.photo-overlay img:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Slider */
+.projects-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Project slides container */
+.project-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+/* Individual project slide */
+.project-slide {
+    min-width: 100%;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Project image */
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Previous and Next buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #13274F;
+    color: white;
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+/* Slider button hover effect */
+.prev:hover,
+.next:hover {
+    opacity: 1;
+}
+
+/* Position of Previous button */
+.prev {
+    left: 10px;
+}
+
+/* Position of Next button */
+.next {
+    right: 10px;
+}
+
+/* General button styles */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px;
+    background: #B0E0E6;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background: #eb6750;
+}
+
+/* Contact section paragraph */
+#contact p {
+    font-size: 18px;
+}
+
+/* Contact section links */
+#contact a {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    margin-top: 40px;
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+
+    /* Display mobile menu toggle */
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+        position: relative;
+        border-radius: 50px;
+    }
+
+    /* Full-screen mobile navigation */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    /* Show mobile navigation */
+    nav.show {
+        display: flex;
+    }
+
+    /* Mobile navigation list */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+    }
+
+    /* Mobile navigation items */
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    /* Mobile navigation links */
+    nav ul li a {
+        font-size: 20px;
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Stack About and Photography content vertically */
+    .about-container,
+    .photo-video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
