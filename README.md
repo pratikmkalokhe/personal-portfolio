@@ -25,3 +25,5 @@ JavaScript – Mobile navigation and project-slider functionality
 Short Description for Project Report:
 
 Developer Portfolio is a responsive personal portfolio website developed using HTML, CSS, and JavaScript. It provides an organized platform to showcase a developer’s personal information, technical and creative skills, educational background, projects, and contact details. The website includes interactive features such as a mobile navigation menu, project slider, hover effects, and responsive layouts, making it accessible across different devices.
+
+Live project link: https://personal-portfolio-pmk.netlify.app/
